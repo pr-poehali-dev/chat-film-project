@@ -1,0 +1,10 @@
+{
+  "tests": [
+    {
+      "name": "Get all movies",
+      "method": "GET",
+      "path": "/",
+      "expectedStatus": 200
+    }
+  ]
+}

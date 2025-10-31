@@ -1,0 +1,26 @@
+{
+  "tests": [
+    {
+      "name": "Get messages for room",
+      "method": "GET",
+      "path": "/?room_id=1",
+      "expectedStatus": 200,
+      "bodyMatcher": "partial"
+    },
+    {
+      "name": "Post new message",
+      "method": "POST",
+      "path": "/",
+      "body": {
+        "room_id": 1,
+        "user_id": 1,
+        "message": "Test message"
+      },
+      "expectedStatus": 201,
+      "expectedBody": {
+        "success": true
+      },
+      "bodyMatcher": "partial"
+    }
+  ]
+}
